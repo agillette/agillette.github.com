@@ -1,23 +1,36 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row gutters" id="recent-work">
+  <div class="column p1 w100">
+    <p>Check out some of the things I've been working on lately.</p>
+  </div>
+  <div class="column p1 w50">
+    <div class="image-container">
+      <img src="/img/central-park-800x450.jpg">
+      <p>freedom.press redesign and back-end optimization</p>
+    </div>
+    <p>Status: <eM>in progress</em><br>Client: <em>Freedom of the Press Foundation</em><br>Role: <em>UI Design, Front-end Development</em><br>Technologies: <em>Drupal, Stripe, PHP, Javascript, HTML5, CSS3</em></p>
+  </div>
+  <div class="column p1 w50">
+    <div class="image-container">
+      <a href="http://sustainabilitylabs.org" target="_blank"><img src="/img/the-lab-800x450.jpg"></a>
+      <p>sustainabilitylabs.org redesign and website network launch</p>
+    </div>
+    <p>Status: <eM>launched/debugging</em><br>Client: <em>The Sustainability Laboratory</em><br>Role: <em>UX & UI Design, Full-stack Development</em><br>Technologies: <em>Wordpress, Toolset, Stripe, PHP, Javascript, jQuery, HTML5, CSS3</em></p>
+  </div>
+  <div class="column p1 w50">
+    <div class="image-container">
+      <a href="http://skycatch.com" target="_blank"><img src="/img/skycatch-800x450.jpg"></a>
+      <p>skycatch.com redesign</p>
+    </div>
+    <p>Status: <eM>launched</em><br>Client: <em>Skycatch, Inc</em><br>Role: <em>UI Design, Front-end Development</em><br>Technologies: <em>Jekyll, Javascript, jQuery, HTML5, CSS3</em></p>
+  </div>
+  <div class="column p1 w50">
+    <div class="image-container">
+      <a href="http://eoarch.com" target="_blank"><img src="/img/eoa-800x450.jpg"></a>
+      <p>eoarch.com redesign</p>
+    </div>
+    <p>Status: <eM>launched</em><br>Client: <em>Elmslie Osler Architects</em><br>Role: <em>UX & UI Design, Full-stack Development</em><br>Technologies: <em>ModX, PHP, Javascript, jQuery, HTML5, CSS3</em></p>
+  </div>
 </div>

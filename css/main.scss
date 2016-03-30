@@ -6,8 +6,9 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -29,7 +30,7 @@ $on-laptop:        800px;
 
 
 
-// Using media queries with like this:
+// Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
@@ -46,7 +47,76 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+        "reset",
+        "breakpoints",
+        "animation",
+        "utilities",
+        "whitespace",
+        "grid",
+        "sidebar",
+        "sizing",
+        "colors",
+        "positioning",
+        "depth",
+        "typography",
+        "tables",
+        "images",
+        "borders",
+        "forms",
+        "buttons",
+        "syntax"
 ;
+
+body>.row, .wrapper>.row {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .w75 {
+	@include medium {
+		display: block;
+		width: 100%;
+	}
+}
+
+header .w25 {
+	@include medium {
+		display: none;
+	}
+}
+
+#recent-work .w50 {
+	padding-top: 0;
+	@include medium {
+		display: block;
+		width: 100%;
+	}
+    .image-container {
+        position: relative;
+        cursor: pointer;
+        img {
+            position: relative;
+            opacity: 0.9;
+            z-index: 99;
+            transition: opacity 0.3s;
+        }
+        p {
+            position: absolute;
+            z-index: 89;
+            top: 50%;
+            left: 20%;
+            text-align: center;
+            width: 60%;
+        }
+    }
+    .image-container:hover {
+        img {
+            opacity: 0.2;
+        }
+    }
+}
+
+#recent-work .w100 {
+	padding-bottom: 0;
+}

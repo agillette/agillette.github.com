@@ -1,13 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
 title: Andy Gillette
 email: andy.gillette@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is my website. It's a good website. Not great, sure, but good. I blogs here and wrote an about page.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://agillette.github.io" # the base hostname & protocol for your site
+description: I am a developer and designer whose work tends to focus on front-end technologies for screens of all types.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://andygillette.com" # the base hostname & protocol for your site
 twitter_username: agillette
 github_username:  agillette
 
 # Build settings
 markdown: kramdown
-
