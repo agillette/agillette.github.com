@@ -2,9 +2,8 @@
 //  Typography
 //====================================================
 
-@font-face { font-family: 'Office Code Pro'; src: url('../fonts/OfficeCodePro-Regular.woff'); }
-$base-font: 'Office Code Pro', Monaco, Consolas, monospace !default;
-$mono-font: 'Office Code Pro', Monaco, Consolas, monospace !default;
+$base-font: 'Source Code Pro', Monaco, Consolas, monospace !default;
+$mono-font: 'Source Code Pro', Monaco, Consolas, monospace !default;
 $base-font-size: 1rem !default;
 $base-line-height: 1.6 !default;
 
