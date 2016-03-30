@@ -84,6 +84,9 @@ header .w25 {
 	@include medium {
 		display: none;
 	}
+    a {
+        font-weight: 400 !important;
+    }
 }
 
 #recent-work .w50 {
